@@ -1,0 +1,33 @@
+# Logs
+# Set the default behavior to automatically normalize line endings for all text files
+* text=auto
+
+# Explicitly define the line ending format for JavaScript files
+*.js text eol=lf
+
+# Explicitly define the line ending format for JSX files
+*.jsx text eol=lf
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
