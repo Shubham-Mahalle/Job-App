@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'',
+    origin:'https://career-connect-frontend-ajpa.onrender.com',
     methods : ["POST","GET"],
     credentials:true
 }
