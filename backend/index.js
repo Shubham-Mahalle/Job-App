@@ -16,11 +16,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://career-connect-frontend-ajpa.onrender.com',
-    methods : ["POST","GET"],
-    credentials:true
-}
-
+    origin: 'https://career-connect-frontend-sepia.vercel.app',
+    methods: ["POST", "GET", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"]
+};
 app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
